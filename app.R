@@ -37,7 +37,7 @@ ui <- bootstrapPage(
 )
 
 
-# Define server logic required to draw a histogram
+# Define server
 server <- function(input, output, session) {
     
     shiptype <- reactive({
