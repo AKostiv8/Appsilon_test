@@ -79,11 +79,6 @@ server <- function(input, output, session) {
         dist_vector <- c((which(data_sample()$Distance == max_point())), 
                          ((which(data_sample()$Distance == max_point()))-1))
         
-        initial_lat = -23.079
-        initial_lng = 178.15
-        initial_zoom = 7
-        
-        pal <- colorFactor(c("navy", "red"), domain = c("start", "end"))
         
         
         leaflet() %>%
